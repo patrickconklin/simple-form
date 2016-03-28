@@ -1,13 +1,39 @@
-body {
-    font-family: Arial, sans-serif;
-}
+body {font-family: Arial, sans-serif;}
 
-main {
-    padding: 5px;
-}
+fieldset {display: inline-block; margin: 10px; width: 350px; border: 2px; border-color: gray; border-style: solid; padding-left: 15px;}
 
-footer {
-    padding: 15px 5px;
-    font-size: 0.8em;
-    color: #666666;
-}
+fieldset input {display: inline-block;}
+
+form {width: auto; padding: 10px;}
+
+label {float: left; clear: left; display: block; width: 120px; padding-right: 10px; margin-top: 10px; text-align: right;}
+
+form input {display: block; margin-top: 10px;}
+
+textarea {display: block; margin-top: 10px;}
+
+input[type="submit"] {margin-top: auto; margin-left: 125px;}
+
+main {padding: 5px;}
+
+footer {padding: 15px 5px; font-size: 0.8em; color: #666666;}
+
+@media only screen and (max-width: 37.5em) {.mobile-only {display: none;}
+    
+    body {margin: 0;}
+    
+    main {margin-left: 0;}
+    
+    fieldset {display: inline;}
+    
+    fieldset input {display: inline; margin: 3px 3px 0px 5px;}
+    
+    form {margin: 0; margin: auto;}
+    
+    form input {margin: 0px; width: 100%}
+    
+    label {margin: 0; margin-top: 10px; float: none; text-align: left;}
+    
+    input[type="submit"] {margin-left: 0;}
+    
+    textarea {display: block; margin-top: 10px; width: 100%;}
